@@ -41,7 +41,7 @@ public class AutomationScripts extends Reusable {
 	}
 	public static void LoginToSFDC() throws InterruptedException, IOException
 	{
-		String [][] data=get_readXlData("C:\\Users\\seema\\OneDrive\\Desktop\\framework\\login.xls","Sheet1");
+		String [][] data=get_readXlData("C:\\Users\\seema\\git\\salesforce1\\SFDC1\\files\\login.xls","Sheet1");
 		String URL=data[1][2];
 		getURL( driver,URL);
 		driver.manage().window().maximize();
